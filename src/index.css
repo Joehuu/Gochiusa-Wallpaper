@@ -36,6 +36,7 @@ code {
   position: absolute;
   margin-left: auto;
   margin-right: auto;
+  top: 0;
   left: 0;
   right: 0;
   text-align: center;
@@ -51,6 +52,12 @@ code {
   right: 0;
   text-align: center;
   border-radius: 5px;
+}
+
+.backgroundImage {
+  filter: blur(1rem) brightness(30%);
+  width: 100%;
+  transform: translateY(-25%);
 }
 
 .navigation {

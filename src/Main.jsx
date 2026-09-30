@@ -265,6 +265,13 @@ const Main = () => {
       className="Main"
       style={{ backgroundColor: backgroundColor }}
     >
+      <img
+        className="backgroundImage"
+        src={`./assets/covers/${
+          toFilename(SongData[songIndex].version?.find(v => v.name.toLowerCase() === version)?.album ?? SongData[songIndex].single ?? SongData[songIndex].album ?? SongData[songIndex].name)
+        }.jpg`}
+        alt=""
+      />
       {audioVis === "true" ? (
         <AudioVisualizer lineColor={lineColor} />
       ) : null}
