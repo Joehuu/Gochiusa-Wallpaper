@@ -1,0 +1,474 @@
+[
+  {
+    "id": 1,
+    "name": "Daydream café",
+    "version": [
+      {
+        "name": "Original"
+      },
+      {
+        "name": "Chimame-Tai",
+        "album": "Chimame march"
+      }
+    ],
+    "backgroundColor": "#000000",
+    "lineColor": "rgba(255, 255, 255, .9)"
+  },
+  {
+    "id": 2,
+    "name": "Poppin Jump♪",
+    "nameOriginal": "ぽっぴんジャンプ♪",
+    "version": [
+      {
+        "name": "Original"
+      },
+      {
+        "name": "Chino"
+      },
+      {
+        "name": "Maya"
+      },
+      {
+        "name": "Megu"
+      }
+    ],
+    "backgroundColor": "#000000",
+    "lineColor": "rgba(255, 255, 255, .9)"
+  },
+  {
+    "id": 3,
+    "name": "Nichijou Decoration",
+    "nameOriginal": "日常デコレーション",
+    "album": "Daydream café",
+    "backgroundColor": "#000000",
+    "lineColor": "rgba(255, 255, 255, .9)"
+  },
+  {
+    "id": 4,
+    "name": "No Poi!",
+    "nameOriginal": "ノーポイッ!",
+    "version": [
+      {
+        "name": "Original"
+      },
+      {
+        "name": "Cocoa"
+      },
+      {
+        "name": "Chino"
+      },
+      {
+        "name": "Rize"
+      },
+      {
+        "name": "Chiya"
+      },
+      {
+        "name": "Syaro"
+      }
+    ],
+    "backgroundColor": "#000000",
+    "lineColor": "rgba(255, 255, 255, .9)"
+  },
+  {
+    "id": 5,
+    "name": "Tokimeki Poporon♪",
+    "nameOriginal": "ときめきポポロン♪",
+    "version": [
+      {
+        "name": "Original"
+      },
+      {
+        "name": "Chino"
+      },
+      {
+        "name": "Maya"
+      },
+      {
+        "name": "Megu"
+      }
+    ],
+    "backgroundColor": "#000000",
+    "lineColor": "rgba(255, 255, 255, .9)"
+  },
+  {
+    "id": 6,
+    "name": "Nantonaku Mirai",
+    "nameOriginal": "なんとなくミライ",
+    "album": "No Poi!",
+    "backgroundColor": "#000000",
+    "lineColor": "rgba(255, 255, 255, .9)"
+  },
+  {
+    "id": 7,
+    "name": "Happiness Encore",
+    "nameOriginal": "ハピネスアンコール",
+    "album": "Sekai ga Café ni Nacchatta!",
+    "backgroundColor": "#000000",
+    "lineColor": "rgba(255, 255, 255, .9)"
+  },
+  {
+    "id": 8,
+    "name": "Sekai ga Café ni Nacchatta!",
+    "nameOriginal": "セカイがカフェになっちゃった!",
+    "backgroundColor": "#000000",
+    "lineColor": "rgba(255, 255, 255, .9)"
+  },
+  {
+    "id": 9,
+    "name": "Tenkuu Cafeteria",
+    "nameOriginal": "天空カフェテリア",
+    "version": [
+      {
+        "name": "Original"
+      },
+      {
+        "name": "Cocoa"
+      },
+      {
+        "name": "Chino"
+      },
+      {
+        "name": "Rize"
+      },
+      {
+        "name": "Chiya"
+      },
+      {
+        "name": "Syaro"
+      }
+    ],
+    "backgroundColor": "#000000",
+    "lineColor": "rgba(255, 255, 255, .9)"
+  },
+  {
+    "id": 10,
+    "name": "Nakayoshi! Maru! Nakayoshi!",
+    "nameOriginal": "なかよし! 〇! なかよし!",
+    "version": [
+      {
+        "name": "Original"
+      },
+      {
+        "name": "Chino"
+      },
+      {
+        "name": "Maya"
+      },
+      {
+        "name": "Megu"
+      }
+    ],
+    "backgroundColor": "#000000",
+    "lineColor": "rgba(255, 255, 255, .9)"
+  },
+  {
+    "id": 11,
+    "name": "Yume < Utsutsu → Happy Time",
+    "nameOriginal": "ユメ<ウツツ→ハッピータイム",
+    "album": "Tenkuu Cafeteria",
+    "backgroundColor": "#000000",
+    "lineColor": "rgba(255, 255, 255, .9)"
+  },
+  {
+    "id": 12,
+    "name": "Takarabako no Jet Coaster",
+    "nameOriginal": "宝箱のジェットコースター",
+    "album": "Takarabako no Jet Coaster",
+    "backgroundColor": "#000000",
+    "lineColor": "rgba(255, 255, 255, .9)"
+  },
+  {
+    "id": 13,
+    "name": "Heart Purupuru Jiken desu",
+    "nameOriginal": "ハートぷるぷる事件です",
+    "album": "Heart Purupuru Jiken desu",
+    "backgroundColor": "#000000",
+    "lineColor": "rgba(255, 255, 255, .9)"
+  },
+  {
+    "id": 14,
+    "name": "Caffeine Fighter",
+    "nameOriginal": "カフェインファイター",
+    "album": "Heart Purupuru Jiken desu",
+    "backgroundColor": "#000000",
+    "lineColor": "rgba(255, 255, 255, .9)"
+  },
+  {
+    "id": 15,
+    "name": "Mirai Puzzle",
+    "nameOriginal": "未来パズル",
+    "album": "CUP OF Chino",
+    "backgroundColor": "#000000",
+    "lineColor": "rgba(255, 255, 255, .9)"
+  },
+  {
+    "id": 16,
+    "name": "Shinsaku no Shiawase wa Kochira!",
+    "nameOriginal": "新作のしあわせはこちら!",
+    "album": "CUP OF Chino",
+    "backgroundColor": "#000000",
+    "lineColor": "rgba(255, 255, 255, .9)"
+  },
+  {
+    "id": 17,
+    "name": "Sootto Blanket",
+    "nameOriginal": "そおっとブランケット",
+    "album": "CUP OF Chino",
+    "backgroundColor": "#000000",
+    "lineColor": "rgba(255, 255, 255, .9)"
+  },
+  {
+    "id": 18,
+    "name": "Mahou Shoujo Chino",
+    "nameOriginal": "魔法少女チノ",
+    "album": "CUP OF Chino",
+    "single": "Mahou Shoujo Chino",
+    "backgroundColor": "#000000",
+    "lineColor": "rgba(255, 255, 255, .9)"
+  },
+  {
+    "id": 19,
+    "name": "WELCOME U-SA!",
+    "nameOriginal": "WELCOME【う・さ!】",
+    "version": [
+      {
+        "name": "Original",
+        "album": "Character Song Series Special Disc"
+      },
+      {
+        "name": "Cocoa",
+        "album": "Character Song Series 01 Cocoa"
+      },
+      {
+        "name": "Rize",
+        "album": "Character Song Series 02 Rize"
+      },
+      {
+        "name": "Maya",
+        "album": "Character Song Series 03 Maya"
+      },
+      {
+        "name": "Syaro",
+        "album": "Character Song Series 04 Syaro"
+      },
+      {
+        "name": "Megu",
+        "album": "Character Song Series 05 Megu"
+      },
+      {
+        "name": "Chino",
+        "album": "Character Song Series 06 Chino"
+      },
+      {
+        "name": "Chiya",
+        "album": "Character Song Series 07 Chiya"
+      },
+      {
+        "name": "Aoyama",
+        "album": "Character Song Series 08 Aoyama Blue Mountain & Mocha"
+      },
+      {
+        "name": "Mocha",
+        "album": "Character Song Series 08 Aoyama Blue Mountain & Mocha"
+      },
+      {
+        "name": "Petit Rabbit's",
+        "album": "Order the songs2"
+      }
+    ],
+    "backgroundColor": "#000000",
+    "lineColor": "rgba(255, 255, 255, .9)"
+  },
+  {
+    "id": 20,
+    "name": "Okashi na Yume wo Ohitotsu Douzo♪",
+    "nameOriginal": "お菓子な夢をおひとつどうぞ♪",
+    "album": "Character Song Series 06 Chino",
+    "backgroundColor": "#000000",
+    "lineColor": "rgba(255, 255, 255, .9)"
+  },
+  {
+    "id": 21,
+    "name": "FUN!FUN!",
+    "album": "Character Song Series 06 Chino",
+    "backgroundColor": "#000000",
+    "lineColor": "rgba(255, 255, 255, .9)"
+  },
+  {
+    "id": 22,
+    "name": "Heart Heart Cake wo Mou Hitotsu?",
+    "nameOriginal": "♡♡ケーキをもうひとつ?",
+    "album": "~Dear My Sister~ CHARACTER SONG 1",
+    "backgroundColor": "#000000",
+    "lineColor": "rgba(255, 255, 255, .9)"
+  },
+  {
+    "id": 23,
+    "name": "Popcorn Happening!",
+    "nameOriginal": "ポップコーンはぷにんぐ!",
+    "album": "~Dear My Sister~ CHARACTER SONG 2",
+    "backgroundColor": "#000000",
+    "lineColor": "rgba(255, 255, 255, .9)"
+  },
+  {
+    "id": 24,
+    "name": "Tekuteku Marching March",
+    "nameOriginal": "てくてくマーチングマーチ",
+    "album": "Chimame march",
+    "backgroundColor": "#000000",
+    "lineColor": "rgba(255, 255, 255, .9)"
+  },
+  {
+    "id": 25,
+    "name": "Little*Treasure*Hunt",
+    "nameOriginal": "リトル*トレジャー*ハント",
+    "album": "Chimame march",
+    "backgroundColor": "#000000",
+    "lineColor": "rgba(255, 255, 255, .9)"
+  },
+  {
+    "id": 26,
+    "name": "Ashita Genki ni Naare!",
+    "nameOriginal": "あした元気になぁれ！",
+    "album": "Chimame march",
+    "backgroundColor": "#000000",
+    "lineColor": "rgba(255, 255, 255, .9)"
+  },
+  {
+    "id": 27,
+    "name": "Honjitsu wa Makoto ni ra-ri-ru-rain",
+    "nameOriginal": "本日は誠にラリルレイン",
+    "album": "Order the songs2",
+    "backgroundColor": "#000000",
+    "lineColor": "rgba(255, 255, 255, .9)"
+  },
+  {
+    "id": 28,
+    "name": "Ashioto Tarte Tatin♪",
+    "nameOriginal": "足音タルトタタン♪",
+    "album": "~Dear My Sister~ DUET SONG ALBUM",
+    "backgroundColor": "#000000",
+    "lineColor": "rgba(255, 255, 255, .9)"
+  },
+  {
+    "id": 29,
+    "name": "Waai Waai Try!",
+    "nameOriginal": "わーいわーいトライ!",
+    "version": [
+      {
+        "name": "Original",
+        "album": "Character Solo Series Special Disc"
+      },
+      {
+        "name": "Cocoa",
+        "album": "Character Solo Series 01 Cocoa"
+      },
+      {
+        "name": "Syaro",
+        "album": "Character Solo Series 02 Syaro"
+      },
+      {
+        "name": "Mocha",
+        "album": "Character Solo Series 03 Mocha"
+      },
+      {
+        "name": "Aoyama",
+        "album": "Character Solo Series 04 Aoyama Blue Mountain"
+      },
+      {
+        "name": "Maya",
+        "album": "Character Solo Series 05 Maya"
+      },
+      {
+        "name": "Megu",
+        "album": "Character Solo Series 06 Megu"
+      },
+      {
+        "name": "Chiya",
+        "album": "Character Solo Series 07 Chiya"
+      },
+      {
+        "name": "Rize",
+        "album": "Character Solo Series 08 Rize"
+      },
+      {
+        "name": "Chino",
+        "album": "Character Solo Series 09 Chino"
+      }
+    ],
+    "backgroundColor": "#000000",
+    "lineColor": "rgba(255, 255, 255, .9)"
+  },
+  {
+    "id": 30,
+    "name": "Happy Happy♪ Birthday Song",
+    "nameOriginal": "ハピハピ♪バースデイソング",
+    "version": [
+      {
+        "name": "Original",
+        "album": "Birthday Song Series Special Disc"
+      },
+      {
+        "name": "Rize",
+        "album": "Birthday Song Series 01 Rize"
+      },
+      {
+        "name": "Mocha",
+        "album": "Birthday Song Series 02 Mocha"
+      },
+      {
+        "name": "Cocoa",
+        "album": "Birthday Song Series 03 Cocoa"
+      },
+      {
+        "name": "Syaro",
+        "album": "Birthday Song Series 04 Syaro"
+      },
+      {
+        "name": "Maya",
+        "album": "Birthday Song Series 05 Maya"
+      },
+      {
+        "name": "Chiya",
+        "album": "Birthday Song Series 06 Chiya"
+      },
+      {
+        "name": "Aoyama",
+        "album": "Birthday Song Series 07 Aoyama Blue Mountain"
+      },
+      {
+        "name": "Megu",
+        "album": "Birthday Song Series 08 Megu"
+      },
+      {
+        "name": "Chino",
+        "album": "Birthday Song Series 09 Chino"
+      }
+    ],
+    "backgroundColor": "#000000",
+    "lineColor": "rgba(255, 255, 255, .9)"
+  },
+  {
+    "id": 31,
+    "name": "Tentakaku Otomeko Yuru Aki",
+    "nameOriginal": "天高くおとめこゆる秋",
+    "album": "Birthday Song Series 06 Chiya",
+    "backgroundColor": "#000000",
+    "lineColor": "rgba(255, 255, 255, .9)"
+  },
+  {
+    "id": 32,
+    "name": "Tiny Christmas Party",
+    "album": "Birthday Song Series 09 Chino",
+    "backgroundColor": "#000000",
+    "lineColor": "rgba(255, 255, 255, .9)"
+  },
+  {
+    "id": 33,
+    "name": "winter*gift",
+    "album": "Birthday Song Series 09 Chino",
+    "backgroundColor": "#000000",
+    "lineColor": "rgba(255, 255, 255, .9)"
+  }
+]

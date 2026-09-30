@@ -111,10 +111,21 @@ const Player = (props) => {
   React.useEffect(() => {
     audioRef.current.pause();
     audioRef.current.src =
-      `./assets/songs/${toFilename(SongData[props.songIndex].name)}${SongData[props.songIndex]?.audioType ?? ".flac"}`;
+      `./assets/songs/${toFilename(SongData[props.songIndex].name)}${SongData[props.songIndex]?.audioType ?? ".opus"}`;
     audioRef.current.play();
     setUserPaused(false);
+    props.changeVersion("original");
   }, [props.songIndex]);
+
+  React.useEffect(() => {
+    const currentTime = audioRef.current.currentTime;
+    audioRef.current.pause();
+    audioRef.current.src =
+      `./assets/songs/${toFilename(SongData[props.songIndex].name)}${props.version === "original" ? "" : " (" + props.version + " Ver.)"}${SongData[props.songIndex]?.audioType ?? ".opus"}`;
+    setUserPaused(false);
+    audioRef.current.currentTime = currentTime;
+    audioRef.current.play();
+  }, [props.version]);
 
   React.useEffect(() => {
     const audio = audioRef.current;

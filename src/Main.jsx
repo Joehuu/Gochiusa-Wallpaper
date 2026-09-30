@@ -11,6 +11,7 @@ import LyricsDisplay from "./LyricsDisplay";
 import { convertWPEColorToCSS, randomExcluded, toFilename } from "./helpers";
 import Lyrics from "./components/Lyrics";
 import util from "util";
+import VersionControl from "./components/VersionControl";
 
 const Main = () => {
   const [songIndex, setIndex] = React.useState(0);
@@ -27,7 +28,7 @@ const Main = () => {
   const [uiVolume, setUiVolume] = React.useState(0.5);
   const [textSize, setTextSize] = React.useState(1);
   const [titleDisplay, setTitleDisplay] = React.useState(TitleDisplay.English);
-  const [lyricsDisplay, setLyricsDisplay] = React.useState(LyricsDisplay.Original);
+  const [lyricsDisplay, setLyricsDisplay] = React.useState(LyricsDisplay.Both);
   const [use24HourClock, set24HourClock] = React.useState(true);
   const [showSeconds, setShowSeconds] = React.useState(true);
   const [overrideBackgroundColor, setOverrideBackgroundColor] = React.useState(false);
@@ -35,6 +36,7 @@ const Main = () => {
   const [overrideLineColor, setOverrideLineColor] = React.useState(false);
   const [customLineColor, setCustomLineColor] = React.useState("#ffffff");
   const [language, setLanguage] = React.useState("en-us");
+  const [version, setVersion] = React.useState("original");
   const audioRef = React.useRef(new Audio());
 
   const backgroundColor = overrideBackgroundColor ? customBackgroundColor : SongData[songIndex].backgroundColor;
@@ -74,7 +76,7 @@ const Main = () => {
   const lyricsHandler = () => {
     //Toggles the lyrics
     setHasLyrics(hasLyrics === "true" ? "false" : "true");
-    localStorage.setItem("source-name-lyrics", hasLyrics === "true" ? "false" : "true");
+    localStorage.setItem("gochiusa-lyrics", hasLyrics === "true" ? "false" : "true");
   };
 
   const reShuffle = (x, y) => {
@@ -82,11 +84,11 @@ const Main = () => {
     if (x === "shuffle") {
       setShuffle(y);
       setReplay(false);
-      localStorage.setItem("source-name-repeat-shuffle", `[${false}, ${y}]`);
+      localStorage.setItem("gochiusa-repeat-shuffle", `[${false}, ${y}]`);
     } else {
       setReplay(y);
       setShuffle(false);
-      localStorage.setItem("source-name-repeat-shuffle", `[${y}, ${false}]`);
+      localStorage.setItem("gochiusa-repeat-shuffle", `[${y}, ${false}]`);
     }
   };
 
@@ -124,14 +126,14 @@ const Main = () => {
       let tempArray = [...songList];
       tempArray[y - 1].push(x);
       setSongList(tempArray);
-      localStorage.setItem("source-name-playlist", JSON.stringify(tempArray));
+      localStorage.setItem("gochiusa-playlist", JSON.stringify(tempArray));
     }
   };
 
   const removeSong = (y) => {
     songList[y - 1].splice(getKey(y), 1);
     setSongList([...songList]);
-    localStorage.setItem("source-name-playlist", JSON.stringify(songList));
+    localStorage.setItem("gochiusa-playlist", JSON.stringify(songList));
   };
 
   const changeId = (e) => {
@@ -142,7 +144,11 @@ const Main = () => {
   const changeMode = (e) => {
     //Changes mode ~the playlist of what the user is using
     setMode(e);
-    localStorage.setItem("source-name-mode", e);
+    localStorage.setItem("gochiusa-mode", e);
+  };
+
+  const changeVersion = (e) => {
+    setVersion(e);
   };
 
   const [prevMode, setPrevMode] = React.useState();
@@ -184,22 +190,22 @@ const Main = () => {
           : "true",
       );
       setMode(
-        localStorage.getItem("source-name-mode") !== null
-          ? parseInt(localStorage.getItem("source-name-mode"))
+        localStorage.getItem("gochiusa-mode") !== null
+          ? parseInt(localStorage.getItem("gochiusa-mode"))
           : 0,
       );
       setSongList(
-        localStorage.getItem("source-name-playlist") !== null
-          ? JSON.parse(localStorage.getItem("source-name-playlist"))
+        localStorage.getItem("gochiusa-playlist") !== null
+          ? JSON.parse(localStorage.getItem("gochiusa-playlist"))
           : [[], []],
       );
       setHasLyrics(
-        localStorage.getItem("source-name-lyrics") !== null
-          ? localStorage.getItem("source-name-lyrics")
+        localStorage.getItem("gochiusa-lyrics") !== null
+          ? localStorage.getItem("gochiusa-lyrics")
           : "true",
       );
-      if (localStorage.getItem("source-name-repeat-shuffle") !== null) {
-        let temp14 = JSON.parse(localStorage.getItem("source-name-repeat-shuffle"));
+      if (localStorage.getItem("gochiusa-repeat-shuffle") !== null) {
+        let temp14 = JSON.parse(localStorage.getItem("gochiusa-repeat-shuffle"));
         setReplay(temp14[0]);
         setShuffle(temp14[1]);
       } else {
@@ -216,13 +222,13 @@ const Main = () => {
       setPlaylist("true");
       localStorage.setItem("playlistH", "true");
       setMode(0);
-      localStorage.setItem("source-name-mode", 0);
+      localStorage.setItem("gochiusa-mode", 0);
       setSongList([[], []]);
-      localStorage.setItem("source-name-playlist", JSON.stringify([[], []]));
+      localStorage.setItem("gochiusa-playlist", JSON.stringify([[], []]));
       setReplay(false);
       setShuffle(true);
-      localStorage.setItem("source-name-repeat-shuffle", JSON.stringify([true, false]));
-      localStorage.setItem("source-name-lyrics", "true");
+      localStorage.setItem("gochiusa-repeat-shuffle", JSON.stringify([true, false]));
+      localStorage.setItem("gochiusa-lyrics", "true");
     }
   }, []);
 
@@ -265,7 +271,7 @@ const Main = () => {
       <img
         className="mainImage"
         src={`./assets/covers/${
-          toFilename(SongData[songIndex].single ?? SongData[songIndex].album ?? SongData[songIndex].name)
+          toFilename(SongData[songIndex].version?.find(v => v.name.toLowerCase() === version)?.album ?? SongData[songIndex].single ?? SongData[songIndex].album ?? SongData[songIndex].name)
         }.jpg`}
         alt=""
         style={{ boxShadow: "1px 1px 12px #150625" }}
@@ -318,6 +324,8 @@ const Main = () => {
           titleDisplay={titleDisplay}
           audioRef={audioRef}
           wpePaused={wpePaused}
+          version={version}
+          changeVersion={changeVersion}
         />
       ) : null}
       {
@@ -329,6 +337,16 @@ const Main = () => {
             lyricsDisplay={lyricsDisplay}
             backgroundColor={backgroundColor}
             lineColor={lineColor}
+          />
+        )
+      }
+      {
+        SongData[songIndex].version != null && (
+          <VersionControl
+            songIndex={songIndex}
+            uiVolume={uiVolume}
+            version={version}
+            changeVersion={changeVersion}
           />
         )
       }

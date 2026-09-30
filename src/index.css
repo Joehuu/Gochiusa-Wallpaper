@@ -247,5 +247,16 @@ code {
   background-color: #0075ff;
 }
 
+.version-control-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  border-radius: 16px;
+  right: 8%;
+  width: 18%;
+  box-shadow: 1px 1px 6px #150625;
+}
+
 @media screen and (min-width: 1px) and (max-width: 1360px) {
 }
