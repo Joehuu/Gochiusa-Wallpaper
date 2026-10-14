@@ -15,4 +15,4 @@ This is a web-based wallpaper music player for the songs of the Gochuumon wa Usa
 
 ## Credits
 
-Thanks to [fandom](https://gochiusa.fandom.com/wiki/Is_the_Order_a_Rabbit%3F_Wiki) contributors for the metadata, [Music Hoarders](https://covers.musichoarders.xyz/) for the assets, [LRCLIB](https://lrclib.net/) contributors for the orginal lyrics / timing, and [UtaTime](https://www.utatime.com/) for the romanized lyrics.
+Thanks to [fandom](https://gochiusa.fandom.com/wiki/Is_the_Order_a_Rabbit%3F_Wiki) contributors for the metadata, [Music Hoarders](https://covers.musichoarders.xyz/) for the cover images, [LRCLIB](https://lrclib.net/) contributors for the orginal lyrics / timing, and [UtaTime](https://www.utatime.com/) / [Snakie's Obsession](https://lyrics.snakeroot.ru/) for the romanized lyrics.
