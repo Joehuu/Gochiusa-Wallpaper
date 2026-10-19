@@ -121,7 +121,7 @@ const Player = (props) => {
     const currentTime = audioRef.current.currentTime;
     audioRef.current.pause();
     audioRef.current.src =
-      `./assets/songs/${toFilename(SongData[props.songIndex].name)}${props.version === "Original" ? "" : " (" + props.version + " Ver.)"}${SongData[props.songIndex]?.audioType ?? ".opus"}`;
+      `./assets/songs/${toFilename(SongData[props.songIndex].name)}${props.version === "Original" ? "" : " ~" + props.version + " Ver.~"}${SongData[props.songIndex]?.audioType ?? ".opus"}`;
     setUserPaused(false);
     audioRef.current.currentTime = currentTime;
     audioRef.current.play();
