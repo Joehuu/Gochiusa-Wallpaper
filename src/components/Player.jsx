@@ -205,9 +205,7 @@ const Player = (props) => {
             style={{
               fontSize: `${titleSize * props.textSize}rem`,
             }}
-          >{`${
-            title
-          }`}</p>
+          >{`${title}${props.version === "Original" || SongData[props.songIndex].version?.find(v => v.name === props.version) == null ? "" : " ~" + props.version + " Ver.~"}`}</p>
         </div>{" "}
         <div
           className="w-full flex items-center justify-center"
