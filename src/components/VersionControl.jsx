@@ -2,6 +2,7 @@ import SongData from "./SongData.json";
 
 const VersionControl = (props) => {
   let keyPress = new Audio();
+  const version = SongData[props.songIndex].version?.find(v => v.name === props.version) == null ? "Original" : props.version;
 
   const onClick = (newVersion) => {
     keyPress.src = `./assets/audios/notes.mp3`;
@@ -29,10 +30,10 @@ const VersionControl = (props) => {
             className={`w-1/3`}
             onClick={() => onClick(child.name)}
             style={{
-              backgroundColor: child.name === props.version ? SongData[props.songIndex].lineColor : `transparent`,
-              color: child.name === props.version ? SongData[props.songIndex].backgroundColor : `white`,
+              backgroundColor: child.name === version ? SongData[props.songIndex].lineColor : `transparent`,
+              color: child.name === version ? SongData[props.songIndex].backgroundColor : `white`,
               borderRadius: "5px",
-              fontWeight: child.name === props.version ? "500" : "normal",
+              fontWeight: child.name === version ? "500" : "normal",
               height: `${1 / Math.ceil(SongData[props.songIndex].version.length / 3) * 100}%`
             }}
             >

@@ -332,7 +332,6 @@ const Main = () => {
           audioRef={audioRef}
           wpePaused={wpePaused}
           version={version}
-          changeVersion={changeVersion}
         />
       ) : null}
       {
