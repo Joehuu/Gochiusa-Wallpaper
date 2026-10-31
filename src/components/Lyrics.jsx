@@ -5,6 +5,7 @@ import { toFilename } from "../helpers";
 import LyricsDisplay from "../LyricsDisplay";
 
 const Lyrics = (props) => {
+  const [hoveredIndex, setHoveredIndex] = React.useState("");
   const [lyrics, setLyrics] = React.useState(["", ""]);
   const [currentTime, setCurrentTime] = React.useState(0);
   const { signal, recoverAutoScrollImmediately } = useRecoverAutoScrollImmediately();
@@ -78,19 +79,21 @@ const Lyrics = (props) => {
     keyPress.play();
   }
 
-  const lineRenderer = ({ active, line: { children, startMillisecond } }) =>
+  const lineRenderer = ({ index, active, line: { children, startMillisecond } }) =>
     <div
       style={{
         opacity: ".85",
         backgroundColor: active
           ? props.lineColor
-          : `transparent`,
-        padding: `10px`,
+          : (hoveredIndex === index ? "rgba(255,255,255,0.3)" : `transparent`),
+        padding: `5px`,
         color: active ? props.backgroundColor : `white`,
         fontWeight: active ? "500" : "normal",
-        borderRadius: active ? "5px" : "0px",
+        borderRadius: "5px",
       }}
       onClick={() => onLineClicked(startMillisecond)}
+      onMouseEnter={() => setHoveredIndex(index)}
+      onMouseLeave={() => setHoveredIndex("")}
     >
       {
         (children[0].content !== children[1]?.content)

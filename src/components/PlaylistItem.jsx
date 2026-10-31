@@ -3,6 +3,7 @@ import SongData from "./SongData.json";
 import TitleDisplay from "../TitleDisplay";
 
 const PlaylistItem = (props) => {
+  const [hoverColor, setHoverColor] = React.useState("");
   let keypress = new Audio();
   const clickHandle = () => {
     props.changeId(props.id - 1);
@@ -32,23 +33,32 @@ const PlaylistItem = (props) => {
     <div className="playlist-item">
       <p
         onClick={clickHandle}
+        onMouseEnter={() => setHoverColor("rgba(255,255,255,0.3)")}
+        onMouseLeave={() => setHoverColor("transparent")}
         style={{
           opacity: ".85",
-          borderBottom: `3px solid ${props.lineColor}`,
           backgroundColor:
             props.songIndex === props.id - 1
               ? props.lineColor
-              : `transparent`,
+              : hoverColor,
           padding: `5px`,
           color:
             props.songIndex === props.id - 1
               ? props.backgroundColor
               : "white",
           fontWeight: props.songIndex === props.id - 1 ? "500" : "normal",
-          borderRadius: props.songIndex === props.id - 1 ? "5px" : "0px",
+          borderRadius: "5px",
         }}
       >
         {props.index}. {title}
+      </p>
+      <p
+        style={{
+          opacity: ".85",
+          paddingTop: "2px",
+          borderBottom: `3px dotted ${props.lineColor}`,
+        }}
+      >
       </p>
     </div>
   );

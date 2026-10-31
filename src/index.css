@@ -64,9 +64,15 @@ code {
   position: absolute;
   top: 5.5%;
   right: 3vh;
-  width: 5vh;
-  height: 5vh;
+  width: 6vh;
+  height: 6vh;
   animation: boxRotate 5s infinite;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.navigation:hover {
+  background-color: rgba(255,255,255,0.3);
 }
 
 .optionBar {
@@ -80,9 +86,15 @@ code {
 .optionIcon {
   position: relative;
   margin: auto;
-  width: 5vh;
-  height: 5vh;
+  width: 6vh;
+  height: 6vh;
   animation: boxTurn 9s infinite;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.optionIcon:hover {
+  background-color: rgba(255,255,255,0.3);
 }
 
 @keyframes boxTurn {
@@ -133,9 +145,14 @@ code {
   position: relative;
   top: 8%;
   display: inline;
-  width: 3vh;
-  height: 3vh;
-  margin-left: 6%;
+  width: 4vh;
+  height: 4vh;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.audioIcon:hover {
+  background-color: rgba(255,255,255,0.3);
 }
 
 .playlist {
@@ -227,6 +244,8 @@ code {
 .lrc {
   padding: 10px;
   overflow: hidden !important;
+  display: grid;
+  gap: 5px;
 
   /* firefox */
   scrollbar-width: none;
@@ -263,6 +282,17 @@ code {
   right: 8%;
   width: 18%;
   box-shadow: 1px 1px 6px #150625;
+}
+
+.version-control {
+  opacity: .85;
+  height: 100%;
+  padding: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 @media screen and (min-width: 1px) and (max-width: 1360px) {
