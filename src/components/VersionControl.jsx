@@ -16,7 +16,7 @@ const VersionControl = (props) => {
   return (
     <div
       className="version-control-container"
-      style={{ border: `4.5px solid ${SongData[props.songIndex].lineColor}`, height: `${Math.ceil(SongData[props.songIndex].version.length / 3) * 5}%`, bottom: `75%` }}
+      style={{ border: `4.5px solid ${props.lineColor}`, height: `${Math.ceil(SongData[props.songIndex].version.length / 3) * 5}%`, bottom: `75%` }}
     >
       <div className="version-control">
         {
@@ -27,8 +27,8 @@ const VersionControl = (props) => {
             onMouseEnter={() => setHoveredIndex(i)}
             onMouseLeave={() => setHoveredIndex("")}
             style={{
-              backgroundColor: child.name === version ? SongData[props.songIndex].lineColor : (hoveredIndex === i ? "rgba(255,255,255,0.3)" : `transparent`),
-              color: child.name === version ? SongData[props.songIndex].backgroundColor : `white`,
+              backgroundColor: child.name === version ? props.lineColor : (hoveredIndex === i ? "rgba(255,255,255,0.3)" : `transparent`),
+              color: child.name === version ? props.backgroundColor : `white`,
               borderRadius: "5px",
               fontWeight: child.name === version ? "500" : "normal",
             }}

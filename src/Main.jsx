@@ -353,6 +353,8 @@ const Main = () => {
             uiVolume={uiVolume}
             version={version}
             changeVersion={changeVersion}
+            backgroundColor={backgroundColor}
+            lineColor={lineColor}
           />
         )
       }
