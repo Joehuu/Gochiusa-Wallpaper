@@ -108,33 +108,44 @@ const Playlist = (props) => {
         boxShadow: "1px 1px 6px #150625",
       }}
     >
-      <div className="playlistNavigation" style={{ height: "10%" }}>
+      <div style={{
+        height: "12%",
+        padding: "5px",
+        borderBottom: `4.5px solid ${props.lineColor}`,
+      }}>
         <button
-          className="h-full w-1/3"
+          className={`h-full w-1/3 button ${props.mode === 0 ? 'button-highlighted' : 'button-normal'}`}
           onClick={() => onChangeMode(0)}
-          style={{
-            borderBottom: `3px solid ${props.lineColor}`,
-            borderRight: `3px solid ${props.lineColor}`,
-          }}
+          style={
+            props.mode === 0 ? {
+              '--line-color': props.lineColor,
+              '--background-color': props.backgroundColor,
+            } : {}
+          }
         >
           {props.translate("default")}
         </button>
         <button
-          className="h-full w-1/3"
+          className={`h-full w-1/3 button ${props.mode === 1 ? 'button-highlighted' : 'button-normal'}`}
           onClick={() => onChangeMode(1)}
-          style={{
-            borderBottom: `3px solid ${props.lineColor}`,
-            borderRight: `3px solid ${props.lineColor}`,
-          }}
+          style={
+            props.mode === 1 ? {
+              '--line-color': props.lineColor,
+              '--background-color': props.backgroundColor,
+            } : {}
+          }
         >
           {props.translate("playlistNumber", 1)}
         </button>
         <button
-          className="w-1/3 h-full"
+          className={`h-full w-1/3 button ${props.mode === 2 ? 'button-highlighted' : 'button-normal'}`}
           onClick={() => onChangeMode(2)}
-          style={{
-            borderBottom: `3px solid ${props.lineColor}`,
-          }}
+          style={
+            props.mode === 2 ? {
+              '--line-color': props.lineColor,
+              '--background-color': props.backgroundColor,
+            } : {}
+          }
         >
           {props.translate("playlistNumber", 2)}
         </button>
@@ -180,26 +191,40 @@ const Playlist = (props) => {
         </div>
       </div>
       <div
-        className="playlistNavigation"
         style={{
-          height: "10%",
+          height: "12%",
           borderTop: `4.5px solid ${props.lineColor}`,
           position: "relative",
+          padding: "5px",
+          display: "flex",
+          columnGap: "5px",
+          justifyContent: "space-between",
         }}
       >
         {props.mode === 0 ? (
           <>
             <button
-              className="w-1/2 h-full"
+              className={`w-1/2 h-full button ${includedInPlaylist(1) ? 'button-highlighted' : 'button-normal'}`}
               onClick={() => onFooter(!includedInPlaylist(1), 1)}
-              style={{
-                borderRight: `3px solid ${props.lineColor}`,
-                height: "100%",
-              }}
+              style={
+                includedInPlaylist(1) ? {
+                  '--line-color': props.lineColor,
+                  '--background-color': props.backgroundColor,
+                } : {}
+              }
             >
               {includedInPlaylist(1) ? "-" : "+"} {props.translate("playlistNumber", 1)}
             </button>
-            <button className="w-1/2 h-full" onClick={() => onFooter(!includedInPlaylist(2), 2)}>
+            <button
+              className={`w-1/2 h-full button ${includedInPlaylist(2) ? 'button-highlighted' : 'button-normal'}`}
+              onClick={() => onFooter(!includedInPlaylist(2), 2)}
+              style={
+                includedInPlaylist(2) ? {
+                  '--line-color': props.lineColor,
+                  '--background-color': props.backgroundColor,
+                } : {}
+              }
+            >
               {includedInPlaylist(2) ? "-" : "+"} {props.translate("playlistNumber", 2)}
             </button>
           </>
