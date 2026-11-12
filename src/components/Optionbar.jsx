@@ -34,7 +34,7 @@ const Optionbar = (props) => {
         src={`./assets/icons/darkclock.png`}
         onClick={() => onPress("clock")}
         alt=""
-        className="optionIcon opacity-70"
+        className="optionIcon"
       />
       <img
         src={`./assets/icons/darksound.png`}
@@ -48,28 +48,28 @@ const Optionbar = (props) => {
         onClick={skipButton}
         style={{ top: "15%" }}
         alt=""
-        className="optionIcon opacity-90"
+        className="optionIcon"
       />
       <img
         src={`./assets/icons/darkheadphones.png`}
         onClick={() => onPress("music")}
         style={{ top: "22.5%" }}
         alt=""
-        className="optionIcon opacity-90"
+        className="optionIcon"
       />
       <img
         src={`./assets/icons/playlist.png`}
         onClick={() => onPress("playlist")}
         style={{ top: "29%" }}
         alt=""
-        className="optionIcon opacity-80"
+        className="optionIcon"
       />
       <img
         src={`./assets/icons/lyricsIcon.png`}
         onClick={() => onPress("lyrics")}
         style={{ top: "35.5%" }}
         alt=""
-        className="optionIcon opacity-80"
+        className="optionIcon"
       />
     </div>
   );

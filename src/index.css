@@ -285,7 +285,6 @@ code {
 }
 
 .version-control {
-  opacity: .85;
   height: 100%;
   padding: 5px;
   margin-top: auto;
@@ -297,7 +296,6 @@ code {
 
 .button {
   border-radius: 5px;
-  opacity: 0.85;
 }
 
 .button-highlighted {

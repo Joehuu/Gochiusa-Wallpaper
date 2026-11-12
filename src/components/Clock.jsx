@@ -37,7 +37,7 @@ const Clock = (props) => {
 
   return (
     <p
-      className={`p-8 leading-none absolute opacity-80 overflow-visible`}
+      className={`p-8 leading-none absolute overflow-visible`}
       style={{
         fontSize: `${mainSize * props.textSize}rem`,
         top: "79vh",

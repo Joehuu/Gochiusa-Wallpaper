@@ -36,7 +36,6 @@ const PlaylistItem = (props) => {
         onMouseEnter={() => setHoverColor("rgba(255,255,255,0.3)")}
         onMouseLeave={() => setHoverColor("transparent")}
         style={{
-          opacity: ".85",
           backgroundColor:
             props.songIndex === props.id - 1
               ? props.lineColor
@@ -54,7 +53,6 @@ const PlaylistItem = (props) => {
       </p>
       <p
         style={{
-          opacity: ".85",
           paddingTop: "2px",
           borderBottom: `3px dotted ${props.lineColor}`,
         }}

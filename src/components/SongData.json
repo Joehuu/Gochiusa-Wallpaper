@@ -12,7 +12,7 @@
       }
     ],
     "backgroundColor": "#000000",
-    "lineColor": "rgba(255, 255, 255, .9)"
+    "lineColor": "rgb(255, 255, 255)"
   },
   {
     "id": 2,
@@ -33,7 +33,7 @@
       }
     ],
     "backgroundColor": "#000000",
-    "lineColor": "rgba(255, 255, 255, .9)"
+    "lineColor": "rgb(255, 255, 255)"
   },
   {
     "id": 3,
@@ -41,7 +41,7 @@
     "nameOriginal": "日常デコレーション",
     "album": "Daydream café",
     "backgroundColor": "#000000",
-    "lineColor": "rgba(255, 255, 255, .9)"
+    "lineColor": "rgb(255, 255, 255)"
   },
   {
     "id": 4,
@@ -68,7 +68,7 @@
       }
     ],
     "backgroundColor": "#000000",
-    "lineColor": "rgba(255, 255, 255, .9)"
+    "lineColor": "rgb(255, 255, 255)"
   },
   {
     "id": 5,
@@ -89,7 +89,7 @@
       }
     ],
     "backgroundColor": "#000000",
-    "lineColor": "rgba(255, 255, 255, .9)"
+    "lineColor": "rgb(255, 255, 255)"
   },
   {
     "id": 6,
@@ -97,7 +97,7 @@
     "nameOriginal": "なんとなくミライ",
     "album": "No Poi!",
     "backgroundColor": "#000000",
-    "lineColor": "rgba(255, 255, 255, .9)"
+    "lineColor": "rgb(255, 255, 255)"
   },
   {
     "id": 7,
@@ -105,14 +105,14 @@
     "nameOriginal": "ハピネスアンコール",
     "album": "Sekai ga Café ni Nacchatta!",
     "backgroundColor": "#000000",
-    "lineColor": "rgba(255, 255, 255, .9)"
+    "lineColor": "rgb(255, 255, 255)"
   },
   {
     "id": 8,
     "name": "Sekai ga Café ni Nacchatta!",
     "nameOriginal": "セカイがカフェになっちゃった!",
     "backgroundColor": "#000000",
-    "lineColor": "rgba(255, 255, 255, .9)"
+    "lineColor": "rgb(255, 255, 255)"
   },
   {
     "id": 9,
@@ -139,7 +139,7 @@
       }
     ],
     "backgroundColor": "#000000",
-    "lineColor": "rgba(255, 255, 255, .9)"
+    "lineColor": "rgb(255, 255, 255)"
   },
   {
     "id": 10,
@@ -160,7 +160,7 @@
       }
     ],
     "backgroundColor": "#000000",
-    "lineColor": "rgba(255, 255, 255, .9)"
+    "lineColor": "rgb(255, 255, 255)"
   },
   {
     "id": 11,
@@ -168,7 +168,7 @@
     "nameOriginal": "ユメ<ウツツ→ハッピータイム",
     "album": "Tenkuu Cafeteria",
     "backgroundColor": "#000000",
-    "lineColor": "rgba(255, 255, 255, .9)"
+    "lineColor": "rgb(255, 255, 255)"
   },
   {
     "id": 12,
@@ -176,7 +176,7 @@
     "nameOriginal": "宝箱のジェットコースター",
     "album": "Takarabako no Jet Coaster",
     "backgroundColor": "#000000",
-    "lineColor": "rgba(255, 255, 255, .9)"
+    "lineColor": "rgb(255, 255, 255)"
   },
   {
     "id": 13,
@@ -184,7 +184,7 @@
     "nameOriginal": "ハートぷるぷる事件です",
     "album": "Heart Purupuru Jiken desu",
     "backgroundColor": "#000000",
-    "lineColor": "rgba(255, 255, 255, .9)"
+    "lineColor": "rgb(255, 255, 255)"
   },
   {
     "id": 14,
@@ -192,7 +192,7 @@
     "nameOriginal": "カフェインファイター",
     "album": "Heart Purupuru Jiken desu",
     "backgroundColor": "#000000",
-    "lineColor": "rgba(255, 255, 255, .9)"
+    "lineColor": "rgb(255, 255, 255)"
   },
   {
     "id": 15,
@@ -200,7 +200,7 @@
     "nameOriginal": "未来パズル",
     "album": "CUP OF Chino",
     "backgroundColor": "#000000",
-    "lineColor": "rgba(255, 255, 255, .9)"
+    "lineColor": "rgb(255, 255, 255)"
   },
   {
     "id": 16,
@@ -208,7 +208,7 @@
     "nameOriginal": "新作のしあわせはこちら!",
     "album": "CUP OF Chino",
     "backgroundColor": "#000000",
-    "lineColor": "rgba(255, 255, 255, .9)"
+    "lineColor": "rgb(255, 255, 255)"
   },
   {
     "id": 17,
@@ -216,7 +216,7 @@
     "nameOriginal": "そおっとブランケット",
     "album": "CUP OF Chino",
     "backgroundColor": "#000000",
-    "lineColor": "rgba(255, 255, 255, .9)"
+    "lineColor": "rgb(255, 255, 255)"
   },
   {
     "id": 18,
@@ -225,7 +225,7 @@
     "album": "CUP OF Chino",
     "single": "Mahou Shoujo Chino",
     "backgroundColor": "#000000",
-    "lineColor": "rgba(255, 255, 255, .9)"
+    "lineColor": "rgb(255, 255, 255)"
   },
   {
     "id": 19,
@@ -278,7 +278,7 @@
       }
     ],
     "backgroundColor": "#000000",
-    "lineColor": "rgba(255, 255, 255, .9)"
+    "lineColor": "rgb(255, 255, 255)"
   },
   {
     "id": 20,
@@ -286,14 +286,14 @@
     "nameOriginal": "お菓子な夢をおひとつどうぞ♪",
     "album": "Character Song Series 06 Chino",
     "backgroundColor": "#000000",
-    "lineColor": "rgba(255, 255, 255, .9)"
+    "lineColor": "rgb(255, 255, 255)"
   },
   {
     "id": 21,
     "name": "FUN!FUN!",
     "album": "Character Song Series 06 Chino",
     "backgroundColor": "#000000",
-    "lineColor": "rgba(255, 255, 255, .9)"
+    "lineColor": "rgb(255, 255, 255)"
   },
   {
     "id": 22,
@@ -301,7 +301,7 @@
     "nameOriginal": "♡♡ケーキをもうひとつ?",
     "album": "~Dear My Sister~ CHARACTER SONG 1",
     "backgroundColor": "#000000",
-    "lineColor": "rgba(255, 255, 255, .9)"
+    "lineColor": "rgb(255, 255, 255)"
   },
   {
     "id": 23,
@@ -309,7 +309,7 @@
     "nameOriginal": "ポップコーンはぷにんぐ!",
     "album": "~Dear My Sister~ CHARACTER SONG 2",
     "backgroundColor": "#000000",
-    "lineColor": "rgba(255, 255, 255, .9)"
+    "lineColor": "rgb(255, 255, 255)"
   },
   {
     "id": 24,
@@ -317,7 +317,7 @@
     "nameOriginal": "てくてくマーチングマーチ",
     "album": "Chimame march",
     "backgroundColor": "#000000",
-    "lineColor": "rgba(255, 255, 255, .9)"
+    "lineColor": "rgb(255, 255, 255)"
   },
   {
     "id": 25,
@@ -325,7 +325,7 @@
     "nameOriginal": "リトル*トレジャー*ハント",
     "album": "Chimame march",
     "backgroundColor": "#000000",
-    "lineColor": "rgba(255, 255, 255, .9)"
+    "lineColor": "rgb(255, 255, 255)"
   },
   {
     "id": 26,
@@ -333,7 +333,7 @@
     "nameOriginal": "あした元気になぁれ！",
     "album": "Chimame march",
     "backgroundColor": "#000000",
-    "lineColor": "rgba(255, 255, 255, .9)"
+    "lineColor": "rgb(255, 255, 255)"
   },
   {
     "id": 27,
@@ -341,7 +341,7 @@
     "nameOriginal": "本日は誠にラリルレイン",
     "album": "Order the songs2",
     "backgroundColor": "#000000",
-    "lineColor": "rgba(255, 255, 255, .9)"
+    "lineColor": "rgb(255, 255, 255)"
   },
   {
     "id": 28,
@@ -349,7 +349,7 @@
     "nameOriginal": "足音タルトタタン♪",
     "album": "~Dear My Sister~ DUET SONG ALBUM",
     "backgroundColor": "#000000",
-    "lineColor": "rgba(255, 255, 255, .9)"
+    "lineColor": "rgb(255, 255, 255)"
   },
   {
     "id": 29,
@@ -398,7 +398,7 @@
       }
     ],
     "backgroundColor": "#000000",
-    "lineColor": "rgba(255, 255, 255, .9)"
+    "lineColor": "rgb(255, 255, 255)"
   },
   {
     "id": 30,
@@ -447,7 +447,7 @@
       }
     ],
     "backgroundColor": "#000000",
-    "lineColor": "rgba(255, 255, 255, .9)"
+    "lineColor": "rgb(255, 255, 255)"
   },
   {
     "id": 31,
@@ -455,20 +455,20 @@
     "nameOriginal": "天高くおとめこゆる秋",
     "album": "Birthday Song Series 06 Chiya",
     "backgroundColor": "#000000",
-    "lineColor": "rgba(255, 255, 255, .9)"
+    "lineColor": "rgb(255, 255, 255)"
   },
   {
     "id": 32,
     "name": "Tiny Christmas Party",
     "album": "Birthday Song Series 09 Chino",
     "backgroundColor": "#000000",
-    "lineColor": "rgba(255, 255, 255, .9)"
+    "lineColor": "rgb(255, 255, 255)"
   },
   {
     "id": 33,
     "name": "winter*gift",
     "album": "Birthday Song Series 09 Chino",
     "backgroundColor": "#000000",
-    "lineColor": "rgba(255, 255, 255, .9)"
+    "lineColor": "rgb(255, 255, 255)"
   }
 ]

@@ -82,7 +82,6 @@ const Lyrics = (props) => {
   const lineRenderer = ({ index, active, line: { children, startMillisecond } }) =>
     <div
       style={{
-        opacity: ".85",
         backgroundColor: active
           ? props.lineColor
           : (hoveredIndex === index ? "rgba(255,255,255,0.3)" : `transparent`),

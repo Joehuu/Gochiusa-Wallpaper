@@ -247,7 +247,7 @@ const Main = () => {
         // Wallpaper Engine properties are named with "accent" instead of "line" as the color is being used in places other than border lines
         // TODO: rename line color to accent color in another refactor
         if (properties.overrideaccentcolor) setOverrideLineColor(properties.overrideaccentcolor.value)
-        if (properties.customaccentcolor) setCustomLineColor(convertWPEColorToCSS(properties.customaccentcolor.value, .9))
+        if (properties.customaccentcolor) setCustomLineColor(convertWPEColorToCSS(properties.customaccentcolor.value))
       },
       applyGeneralProperties: function (properties) {
         if (properties.language) setLanguage(properties.language);

@@ -228,7 +228,7 @@ const Player = (props) => {
           <img
             className="audioIcon"
             onClick={() => onReplay()}
-            style={{ marginLeft: "0%", opacity: ".85" }}
+            style={{ marginLeft: "0%" }}
             alt=""
             src={
               props.replay
@@ -278,7 +278,6 @@ const Player = (props) => {
           <img
             className="audioIcon"
             onClick={() => shuffle()}
-            style={{ opacity: ".85" }}
             alt=""
             src={
               props.shuffle
