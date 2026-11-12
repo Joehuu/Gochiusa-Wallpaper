@@ -6,7 +6,7 @@ This is a web-based wallpaper music player for the songs of the Gochuumon wa Usa
 
 ## Steam Workshop Link
 
-[Gochuumon wa Usagi desu ka? ご注文はうさぎですか？ (Album)](https://steamcommunity.com/sharedfiles/filedetails/?id=3593550017)
+Gochuumon wa Usagi desu ka? ご注文はうさぎですか？ (Album) (not uploaded yet)
 
 ## Other Wallpapers
 
