@@ -2,7 +2,6 @@ import React from "react";
 import SongData from "./SongData.json";
 
 const VersionControl = (props) => {
-  const [hoveredIndex, setHoveredIndex] = React.useState("");
   let keyPress = new Audio();
   const version = SongData[props.songIndex].version?.find(v => v.name === props.version) == null ? "Original" : props.version;
 
@@ -22,16 +21,13 @@ const VersionControl = (props) => {
         {
           SongData[props.songIndex].version?.map((child, i) => (
             <button
-            key={i}
-            onClick={() => onClick(child.name)}
-            onMouseEnter={() => setHoveredIndex(i)}
-            onMouseLeave={() => setHoveredIndex("")}
-            style={{
-              backgroundColor: child.name === version ? props.lineColor : (hoveredIndex === i ? "rgba(255,255,255,0.3)" : `transparent`),
-              color: child.name === version ? props.backgroundColor : `white`,
-              borderRadius: "5px",
-              fontWeight: child.name === version ? "500" : "normal",
-            }}
+              key={i}
+              className={`button ${child.name === version ? 'button-highlighted' : 'button-normal hover-click-element'}`}
+              style={{
+                '--line-color': props.lineColor,
+                '--background-color': props.backgroundColor,
+              }}
+              onClick={() => onClick(child.name)}
             >
             {child.name}
             </button>

@@ -28,7 +28,7 @@ const Navigation = (props) => {
         src={`./assets/icons/darksetting.png`}
         width="5vh"
         height="5vh"
-        className="navigation"
+        className="navigation hover-click-element"
         onClick={onActivate}
         alt=""
       />

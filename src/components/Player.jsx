@@ -226,7 +226,7 @@ const Player = (props) => {
         </div>
         <div className="audioControls flex items-center justify-between">
           <img
-            className="audioIcon"
+            className="audioIcon hover-click-element"
             onClick={() => onReplay()}
             style={{ marginLeft: "0%" }}
             alt=""
@@ -237,46 +237,46 @@ const Player = (props) => {
             }
           />
           <img
-            className="audioIcon"
+            className="audioIcon hover-click-element"
             onClick={lessVolume}
             alt=""
             src="./assets/icons/volumeMinus.png"
           />
           <img
-            className="audioIcon"
+            className="audioIcon hover-click-element"
             onClick={prevButton}
             alt=""
             src="./assets/icons/backward.png"
           />
           {userPaused || props.wpePaused ? (
             <img
-              className="audioIcon"
+              className="audioIcon hover-click-element"
               onClick={playButton}
               alt=""
               src="./assets/icons/play.png"
             />
           ) : (
             <img
-              className="audioIcon"
+              className="audioIcon hover-click-element"
               onClick={pauseButton}
               alt=""
               src="./assets/icons/pause.png"
             />
           )}
           <img
-            className="audioIcon"
+            className="audioIcon hover-click-element"
             onClick={() => skipButton(true)}
             alt=""
             src="./assets/icons/forward.png"
           />
           <img
-            className="audioIcon"
+            className="audioIcon hover-click-element"
             onClick={addVolume}
             alt=""
             src="./assets/icons/volumePlus.png"
           />
           <img
-            className="audioIcon"
+            className="audioIcon hover-click-element"
             onClick={() => shuffle()}
             alt=""
             src={

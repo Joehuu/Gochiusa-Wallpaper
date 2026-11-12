@@ -71,10 +71,6 @@ code {
   border-radius: 10px;
 }
 
-.navigation:hover {
-  background-color: rgba(255,255,255,0.3);
-}
-
 .optionBar {
   position: absolute;
   top: 15%;
@@ -91,10 +87,6 @@ code {
   animation: boxTurn 9s infinite;
   padding: 10px;
   border-radius: 10px;
-}
-
-.optionIcon:hover {
-  background-color: rgba(255,255,255,0.3);
 }
 
 @keyframes boxTurn {
@@ -149,10 +141,6 @@ code {
   height: 4vh;
   padding: 8px;
   border-radius: 10px;
-}
-
-.audioIcon:hover {
-  background-color: rgba(255,255,255,0.3);
 }
 
 .playlist {
@@ -295,7 +283,8 @@ code {
 }
 
 .button {
-  border-radius: 5px;
+  border-radius: 7px;
+  padding: 5px;
 }
 
 .button-highlighted {
@@ -304,10 +293,26 @@ code {
   font-weight: 500;
 }
 
+.button-highlighted:hover {
+  filter: brightness(90%);
+}
+
+.button-highlighted:active {
+  filter: brightness(80%);
+}
+
 .button-normal {
   background-color: transparent;
   color: white;
   font-weight: normal;
+}
+
+.hover-click-element:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.hover-click-element:active {
+  background: rgba(255, 255, 255, 0.4);
 }
 
 @media screen and (min-width: 1px) and (max-width: 1360px) {

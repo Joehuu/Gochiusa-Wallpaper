@@ -112,9 +112,11 @@ const Playlist = (props) => {
         height: "12%",
         padding: "5px",
         borderBottom: `4.5px solid ${props.lineColor}`,
+        display: "flex",
+        columnGap: "5px",
       }}>
         <button
-          className={`h-full w-1/3 button ${props.mode === 0 ? 'button-highlighted' : 'button-normal'}`}
+          className={`h-full w-1/3 button ${props.mode === 0 ? 'button-highlighted' : 'button-normal hover-click-element'}`}
           onClick={() => onChangeMode(0)}
           style={
             props.mode === 0 ? {
@@ -126,7 +128,7 @@ const Playlist = (props) => {
           {props.translate("default")}
         </button>
         <button
-          className={`h-full w-1/3 button ${props.mode === 1 ? 'button-highlighted' : 'button-normal'}`}
+          className={`h-full w-1/3 button ${props.mode === 1 ? 'button-highlighted' : 'button-normal hover-click-element'}`}
           onClick={() => onChangeMode(1)}
           style={
             props.mode === 1 ? {
@@ -138,7 +140,7 @@ const Playlist = (props) => {
           {props.translate("playlistNumber", 1)}
         </button>
         <button
-          className={`h-full w-1/3 button ${props.mode === 2 ? 'button-highlighted' : 'button-normal'}`}
+          className={`h-full w-1/3 button ${props.mode === 2 ? 'button-highlighted' : 'button-normal hover-click-element'}`}
           onClick={() => onChangeMode(2)}
           style={
             props.mode === 2 ? {
@@ -204,7 +206,7 @@ const Playlist = (props) => {
         {props.mode === 0 ? (
           <>
             <button
-              className={`w-1/2 h-full button ${includedInPlaylist(1) ? 'button-highlighted' : 'button-normal'}`}
+              className={`w-1/2 h-full button ${includedInPlaylist(1) ? 'button-highlighted' : 'button-normal hover-click-element'}`}
               onClick={() => onFooter(!includedInPlaylist(1), 1)}
               style={
                 includedInPlaylist(1) ? {
@@ -216,7 +218,7 @@ const Playlist = (props) => {
               {includedInPlaylist(1) ? "-" : "+"} {props.translate("playlistNumber", 1)}
             </button>
             <button
-              className={`w-1/2 h-full button ${includedInPlaylist(2) ? 'button-highlighted' : 'button-normal'}`}
+              className={`w-1/2 h-full button ${includedInPlaylist(2) ? 'button-highlighted' : 'button-normal hover-click-element'}`}
               onClick={() => onFooter(!includedInPlaylist(2), 2)}
               style={
                 includedInPlaylist(2) ? {
@@ -231,7 +233,7 @@ const Playlist = (props) => {
         ) : (
           <>
             <button
-              className="h-full w-full"
+              className="h-full w-full button button-normal hover-click-element"
               onClick={() => onFooter(false, props.mode)}
               style={{
                 padding: "0px",

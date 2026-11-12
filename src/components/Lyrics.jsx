@@ -5,7 +5,6 @@ import { toFilename } from "../helpers";
 import LyricsDisplay from "../LyricsDisplay";
 
 const Lyrics = (props) => {
-  const [hoveredIndex, setHoveredIndex] = React.useState("");
   const [lyrics, setLyrics] = React.useState(["", ""]);
   const [currentTime, setCurrentTime] = React.useState(0);
   const { signal, recoverAutoScrollImmediately } = useRecoverAutoScrollImmediately();
@@ -79,20 +78,14 @@ const Lyrics = (props) => {
     keyPress.play();
   }
 
-  const lineRenderer = ({ index, active, line: { children, startMillisecond } }) =>
+  const lineRenderer = ({ active, line: { children, startMillisecond } }) =>
     <div
+      className={`button ${active ? 'button-highlighted' : 'button-normal hover-click-element'}`}
       style={{
-        backgroundColor: active
-          ? props.lineColor
-          : (hoveredIndex === index ? "rgba(255,255,255,0.3)" : `transparent`),
-        padding: `5px`,
-        color: active ? props.backgroundColor : `white`,
-        fontWeight: active ? "500" : "normal",
-        borderRadius: "5px",
+        '--line-color': props.lineColor,
+        '--background-color': props.backgroundColor,
       }}
       onClick={() => onLineClicked(startMillisecond)}
-      onMouseEnter={() => setHoveredIndex(index)}
-      onMouseLeave={() => setHoveredIndex("")}
     >
       {
         (children[0].content !== children[1]?.content)
