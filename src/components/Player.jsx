@@ -114,6 +114,7 @@ const Player = (props) => {
       `./assets/songs/${toFilename(SongData[props.songIndex].name)}${props.version === "Original" || SongData[props.songIndex].version?.find(v => v.name === props.version) == null ? "" : " ~" + props.version + " Ver.~"}${SongData[props.songIndex]?.audioType ?? ".opus"}`;
     audioRef.current.play();
     setUserPaused(false);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [props.songIndex]);
 
   React.useEffect(() => {
@@ -124,6 +125,7 @@ const Player = (props) => {
     setUserPaused(false);
     audioRef.current.currentTime = currentTime;
     audioRef.current.play();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [props.version]);
 
   React.useEffect(() => {
