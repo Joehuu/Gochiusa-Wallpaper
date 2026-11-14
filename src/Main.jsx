@@ -268,7 +268,7 @@ const Main = () => {
       <img
         className="backgroundImage"
         src={`./assets/covers/${
-          toFilename(SongData[songIndex].version?.find(v => v.name === version || v.name === "Original")?.album ?? SongData[songIndex].single ?? SongData[songIndex].album ?? SongData[songIndex].name)
+          toFilename(SongData[songIndex].version?.find(v => v.name === version)?.album ?? SongData[songIndex].version?.find(v => v.name === "Original")?.album ?? SongData[songIndex].single ?? SongData[songIndex].album ?? SongData[songIndex].name)
         }.jpg`}
         alt=""
       />
@@ -278,7 +278,7 @@ const Main = () => {
       <img
         className="mainImage"
         src={`./assets/covers/${
-          toFilename(SongData[songIndex].version?.find(v => v.name === version || v.name === "Original")?.album ?? SongData[songIndex].single ?? SongData[songIndex].album ?? SongData[songIndex].name)
+          toFilename(SongData[songIndex].version?.find(v => v.name === version)?.album ?? SongData[songIndex].version?.find(v => v.name === "Original")?.album ?? SongData[songIndex].single ?? SongData[songIndex].album ?? SongData[songIndex].name)
         }.jpg`}
         alt=""
         style={{ boxShadow: "1px 1px 12px #150625" }}
